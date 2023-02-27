@@ -5,11 +5,13 @@
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-    11<input type="button" onClick="sendLinkCustom();" value="Custom"/>
+    <input type="button" onClick="sendLinkCustom();" value="Custom"/>
     <input type="button" onClick="sendLinkDefault();" value="Default"/>
 
 <script type="text/javascript">
     Kakao.init('476d2c81b39e8cbfed56ae41d2da4b3f');
+    
+    console.log(Kakao.isInitialized());
     
     function sendLinkCustom() {
     Kakao.Link.sendDefault({
